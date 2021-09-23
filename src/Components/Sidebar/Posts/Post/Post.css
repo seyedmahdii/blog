@@ -1,0 +1,18 @@
+.post {
+    display: flex;
+    margin: 1rem 0;
+    color: #515050;
+}
+.post:hover {
+    color: black;
+}
+.post__img {
+    width: 70px;
+    height: 45px;
+    border-radius: 3px;
+    object-fit: conver;
+    margin-left: 0.8rem;
+}
+.post__caption {
+    font-size: 0.85rem;
+}

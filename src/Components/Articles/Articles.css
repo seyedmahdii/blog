@@ -1,0 +1,12 @@
+.articles {
+    width: 100%;
+}
+.loading {
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .articles {
+        width: 67%;
+    }
+}

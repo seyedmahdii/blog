@@ -1,0 +1,14 @@
+.Languages {
+    margin: 1rem 0;
+    padding: 0.3rem 0rem;
+}
+.languages__title {
+    font-size: 0.8rem;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+.languages__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem 0.3rem;
+}

@@ -1,0 +1,103 @@
+.article {
+    background-color: white;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+}
+.article__header {
+    margin-bottom: 1.5rem;
+}
+.article__header-link {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.article__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article__details-right {
+    display: flex;
+    align-items: center;
+}
+.article__profile {
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    font-size: 12px;
+}
+.article__name-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article__writer {
+    color: #989a9c;
+    font-size: 14px;
+    margin-bottom: 0.7rem;
+}
+.article__date {
+    color: #babec1;
+    font-size: 12px;
+}
+.article__category {
+    color: #01af8f;
+    font-size: 14px;
+    margin-bottom: 0.7rem;
+}
+.article__category-link {
+    color: #01af8f;
+    font-weight: 600;
+    padding: 0.1rem 0;
+    border-bottom: 1px solid #01af8f;
+}
+.article__reading-time {
+    color: #712be5;
+    font-size: 14px;
+    text-align: left;
+}
+.article__img-container {
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+.article__img {
+    transition: all 0.3s linear;
+}
+.article__img:hover {
+    transform: scale(1.07);
+}
+.article__desc {
+    color: #4a4a4a;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 3.4em;
+    line-height: 1.7em;
+    margin-bottom: 1rem;
+}
+.article__button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.article__button {
+    padding: 0.3rem 0.85rem;
+    background-image: linear-gradient(#01af8f, #0fecc3);
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.3s linear;
+}
+.article__button:hover {
+    background-image: linear-gradient(#049e82, #0fecc3);
+}
+
+@media all and (min-width: 768px) {
+    .article {
+        padding: 1.2rem 4rem;
+    }
+}
