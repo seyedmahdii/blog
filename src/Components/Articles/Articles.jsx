@@ -16,10 +16,11 @@ function Articles() {
             const { data, ...rest } = res.data.Parameters;
             setPagination(rest);
             setArticles(data);
+            setIsLoading(false);
         } catch (error) {
             console.log("Error Fetching!!!");
+            setIsLoading(false);
         }
-        setIsLoading(false);
     };
 
     useEffect(() => {
@@ -36,7 +37,7 @@ function Articles() {
 
     return (
         <div className="articles">
-            {articles.map((article, ind) => (
+            {articles?.map((article, ind) => (
                 <Article article={article} key={ind} />
             ))}
 
